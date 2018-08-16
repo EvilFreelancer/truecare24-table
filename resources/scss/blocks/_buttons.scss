@@ -1,0 +1,33 @@
+@import "../variables";
+
+.btn-group-action {
+  .btn {
+    text-transform: uppercase;
+    margin-left: 10px;
+    border-radius: 4px;
+    line-height: 25px;
+    font-size: 13px;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  .btn-primary-outline {
+    background-color: transparent;
+    margin-left: 0;
+    color: $color-gray3 !important;
+    padding: 0 10px 0 20px;
+    line-height: 25px;
+    font-size: 13px;
+  }
+}
+
+.btn {
+  border-color: transparent;
+}
+
+.btn-info {
+  background-color: $color-lightblue;
+}
+
+.btn-success {
+  background-color: $color-green;
+}

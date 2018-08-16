@@ -1,0 +1,16 @@
+/*
+  Vendor styles
+ */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*
+  Fonts
+ */
+$fa-font-path: '../fonts/' !default;
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700";
+
+/*
+  Custom styles
+ */
+@import "blocks/blocks";

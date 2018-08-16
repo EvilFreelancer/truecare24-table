@@ -1,0 +1,40 @@
+@import "../variables";
+
+.modal .modal-dialog {
+  width: 300px;
+}
+
+.modal-body {
+  padding: 20px;
+  p {
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 16px;
+    color: $color-darkblue;
+    margin-bottom: 10px;
+  }
+  textarea {
+    margin-bottom: 20px;
+    background: #F5F9FC;
+    border: 1px solid #D9E2EA;
+    box-sizing: border-box;
+    border-radius: 6px;
+    &::placeholder {
+      color: $color-blue-gray;
+    }
+  }
+}
+
+.star-rating {
+  font-size: 20px;
+  margin-bottom: 12px;
+  .fa {
+    margin-right: 5px;
+  }
+  .yellow {
+    color: $color-orange;
+  }
+  .gray {
+    color: $color-gray4;
+  }
+}

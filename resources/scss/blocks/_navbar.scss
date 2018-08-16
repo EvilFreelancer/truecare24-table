@@ -1,0 +1,45 @@
+@import "../variables";
+
+.navbar {
+  padding: 15px 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+  .input-group {
+    background: #F5F9FC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    .btn {
+      background-color: $color-lightblue;
+      border-color: transparent;
+      color: #fff;
+    }
+  }
+
+  .form-control {
+    border: 1px solid #DBE5EB;
+    max-width: 115px;
+    height: auto;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $color-blue-gray;
+      line-height: 19px;
+      font-size: 14px;
+      opacity: 1; /* Firefox */
+    }
+  }
+
+  .link-back {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 0 !important;
+  }
+
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}

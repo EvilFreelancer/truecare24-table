@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Dummy website">
+    <meta name="author" content="Mister King">
+
+    <title>TrueCare24 - Table example</title>
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+{% set items = {
+    0: {
+        "id": 7543,
+        "line": "info",
+        "type": {"icon1": "flag", "icon2": "user"},
+        "name": "Lucile Munoz",
+        "email": "oceane.torp@brennan.us",
+        "phone": "+1 (727) 809-1539",
+        "status": {"class": "info", "icon": "long-arrow-right", "text": "Contacting"}
+    },
+    1: {
+        "id": 9755,
+        "line": "info",
+        "type": {"icon1": "flag", "icon2": "user"},
+        "name": "Winifred Henderson",
+        "email": "landen_deckow@hotmail.com",
+        "phone": "+1 (532) 831-5321",
+        "status": {"class": "info", "icon": "phone", "text": "Talked to the client"}
+    },
+    2: {
+        "id": 3421,
+        "line": "info",
+        "type": {"icon1": "minus", "icon2": "user"},
+        "name": "Birdie Carson",
+        "email": "dietrich_amiya@yahoo.com",
+        "phone": "+1 (673) 223-7397",
+        "status": {"class": "info", "icon": "eye", "text": "Assessment scheduled"}
+    },
+    3: {
+        "id": 7675,
+        "line": "info",
+        "type": {"icon1": "minus", "icon2": "envelope-open"},
+        "name": "Family Care SF, Inc.",
+        "email": "dorothy.lesch@dickinson.me",
+        "phone": "+1 (866) 124-5438",
+        "status": {"class": "info", "icon": "star", "text": "Contract Signed"}
+    },
+    4: {
+        "id": 5553,
+        "line": "danger",
+        "type": {"icon1": "flag", "icon2": "user"},
+        "name": "Barry Alexander",
+        "email": "reilly.julius@gmail.com",
+        "phone": "+1 (885) 163-9766",
+        "status": {"class": "danger", "icon": "times", "text": "Cancel the client"}
+    },
+} %}
+
+<div class="wrapper">
+
+    <nav class="sidebar">
+        {% include "blocks/sidebar.twig" %}
+    </nav>
+
+    <div class="content">
+        {% include "blocks/navbar.twig" %}
+        <div class="content-wrapper">
+            <div class="content-body">
+                {% include "blocks/content.twig" %}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

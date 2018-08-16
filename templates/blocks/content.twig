@@ -1,0 +1,36 @@
+<p class="content-title">Matched providers</p>
+
+<table class="table table-striped block-table">
+    <tr class="flex">
+        <th class="d-none d-lg-table-cell">Type</th>
+        <th>Name</th>
+        <th class="d-none d-xl-table-cell">Email</th>
+        <th class="d-none d-lg-table-cell">Phone</th>
+        <th class="d-none d-xl-table-cell">ID</th>
+        <th>Status</th>
+        <th></th>
+    </tr>
+    {% for item in items %}
+        <tr class="flex {{ item.line }}">
+            <td class="d-none d-lg-table-cell">
+                <div class="icon"><i class="fa fa-{{ item.type.icon1 }}"></i></div>
+                <div class="icon"><i class="fa fa-{{ item.type.icon2 }}"></i></div>
+            </td>
+            <td class="name">{{ item.name }}</td>
+            <td class="d-none d-xl-table-cell">{{ item.email }}</td>
+            <td class="d-none d-lg-table-cell">{{ item.phone }}</td>
+            <td class="d-none d-xl-table-cell">{{ item.id }}</td>
+            <td class="status">
+                <div class="icon {{ item.status.class }}"><i class="fa fa-{{ item.status.icon }}"></i></div>
+                {% include "blocks/dropdown.twig" %}
+            </td>
+            <td>
+                <div class="pull-right btn-group-action">
+                    <button class="btn btn-sm btn-info">chat</button>
+                    <button class="btn btn-sm btn-success">call</button>
+                    {% include "blocks/dropdown2.twig" %}
+                </div>
+            </td>
+        </tr>
+    {% endfor %}
+</table>

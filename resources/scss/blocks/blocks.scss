@@ -1,0 +1,31 @@
+@import "../variables";
+@import "content";
+@import "navbar";
+@import "sidebar";
+@import "table";
+@import "icons";
+@import "buttons";
+@import "modal";
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $color-lightgray;
+  color: $color-darkblue;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a {
+  &:hover,
+  &:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+}
