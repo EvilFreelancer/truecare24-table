@@ -4,6 +4,7 @@ ADD [".", "/app"]
 WORKDIR /app
 
 RUN apk add --update --no-cache nodejs nodejs-npm \
+ && composer update \
  && npm install \
  && ./node_modules/gulp/bin/gulp.js \
  && chown -R apache:apache /app \
