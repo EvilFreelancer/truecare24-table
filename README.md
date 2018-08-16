@@ -1,9 +1,4 @@
-# Hello, my name is ***Mister Potato***
-
-I'm a simple project skeleton for quickly creating landing pages on PHP,
-I'm using the TWIG template engine and are able to generate static HTML.
-
-    composer create-project drteam/potato my_project
+# TrueCare24 Table demo application
 
 ## Ok, what next?
 
